@@ -8,3 +8,4 @@ function ShoppingLayout(){
         </div>
     );
 }
+export default ShoppingLayout;
