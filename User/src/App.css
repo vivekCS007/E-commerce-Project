@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,24 @@
 
 .read-the-docs {
   color: #888;
+} */
+/* App.css */
+
+/* General layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
 }
+
+/* Header styling */
+.header {
+  font-size: 2rem; /* Equivalent to Tailwind's text-xl */
+  font-weight: bold; /* Equivalent to font-bold */
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Routes styling (for any additional custom styles inside Routes) */
+/* You can add more specific styles for Routes if needed */
