@@ -7,7 +7,8 @@ import store from './store/store'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <Provider store={store}><App />
+    <Provider store={store}>
+      <App />
     </Provider>
   </BrowserRouter>
 
