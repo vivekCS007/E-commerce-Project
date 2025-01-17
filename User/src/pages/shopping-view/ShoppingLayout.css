@@ -1,0 +1,32 @@
+/* ShoppingLayout.css */
+
+/* Main container */
+.shopping-layout {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Header styles */
+.shopping-header {
+    /* You can adjust these styles as per your design */
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+/* Main content area */
+.shopping-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Optional: Add media queries if needed */
+@media (min-width: 768px) {
+    /* Add responsive design if needed */
+    .shopping-main {
+        padding: 30px;
+    }
+}
