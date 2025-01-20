@@ -21,6 +21,7 @@ import NotFound from './pages/not-found';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { Skeleton } from './component/UI/skeleton';
+import {useEffect} from 'react';
 function App() {
   // const isAuthenticated = true; 
   // const user = null;

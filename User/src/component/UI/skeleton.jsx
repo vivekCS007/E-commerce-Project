@@ -1,4 +1,4 @@
-import "./skeleton-styles.css"; // Import the CSS file
+import "./skeleton-style.css"; // Import the CSS file
 
 function Skeleton({ className, ...props }) {
   return (

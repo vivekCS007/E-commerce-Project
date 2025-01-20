@@ -17,18 +17,19 @@
 // }
 // export default AdminLayout;
 
-import React from 'react';
+import React, { useState } from 'react';
 import './AdminLayout.css'; // Import the CSS file
 
 function AdminLayout() {
+    const [openSidebar,setOpenSidebar]=useState(false)
     return (
         <div className="admin-layout">
             <div className="admin-sidebar">
-                <AdminSideBar />
+                <AdminSideBar open={openSidebar} setOpen={setOpenSidebar}/>
             </div>
             <div className="admin-main">
                 <div className="admin-header">
-                    <AdminHeader />
+                    <AdminHeader setOpen={setOpenSidebar}/>
                 </div>
                 <main className="admin-content">
                     <Outlet />

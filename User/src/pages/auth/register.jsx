@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { useToast } from "@/component/ui/use-toast";
+import { useToast } from "@/component/UI/use-toast";
 import { registerUser } from "../../store/auth-slice";
 import CommonForm from "@/component/common/form";
-import { registerFormControls } from "@/config";
+import { registerFormControls } from "@/config/index";
 import "./register.css";
 const initialState = {
     name: "",
