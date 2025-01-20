@@ -1,0 +1,33 @@
+.custom-input {
+    display: flex;
+    height: 2.5rem; /* 40px */
+    width: 100%;
+    border-radius: 0.375rem; /* 6px */
+    border: 1px solid var(--input-border-color, #ccc);
+    background-color: var(--background-color, #fff);
+    padding: 0.5rem 0.75rem; /* 8px 12px */
+    font-size: 0.875rem; /* 14px */
+    color: var(--text-color, #000);
+  }
+  
+  .custom-input::placeholder {
+    color: var(--muted-foreground-color, #888);
+  }
+  
+  .custom-input:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--focus-ring-color, #0077ff);
+  }
+  
+  .custom-input:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .custom-input::-webkit-file-upload-button {
+    border: none;
+    background: transparent;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+  }
+  
