@@ -40,4 +40,6 @@ export const loginFormControls=[
     placeholder : 'Enter your password',
     required : true
     
-}]
+},];
+
+

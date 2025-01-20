@@ -1,0 +1,57 @@
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: var(--background-color, #fff);
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+
+.logout-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.logout-button {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-button svg {
+    width: 16px;
+    height: 16px;
+}
