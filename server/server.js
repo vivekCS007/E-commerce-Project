@@ -1,11 +1,11 @@
-const express=require('express');
+import express, { json } from 'express';
 require('dotenv').config(); 
-const mongoose=require('mongoose');
+import { connect } from 'mongoose';
 const MONGOURI = process.env.MONGOURI;
-const cors=require('cors');
-const cookieParser=require('cookie-parser');
-
-mongoose.connect(MONGOURI).then(()=>{
+import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import authRouter from './routes/auth/auth-routes';
+connect(MONGOURI).then(()=>{
     console.log("connected to database");
 }).catch((err)=>{
     console.log(err);
@@ -17,14 +17,14 @@ const PORT=process.env.PORT || 5000;
 
 app.use(
     cors({
-        origin:"http://localhost:5173/",
+        origin:"http://localhost:5173",
         methods : ["GET","POST","PUT","DELETE"],
         allowedHeaders : ["Content-Type","Authorization","Cache-Control","Expires","Pragma"],
         credentials : true
     })
 );
-
-app.use(express.json());
+app.use('/api/auth',authRouter);
+app.use(json());
 app.use(cookieParser());
 app.listen(PORT,()=>{
     console.log(`listening on port ${PORT}`);
