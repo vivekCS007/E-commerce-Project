@@ -1,0 +1,108 @@
+/* Base Button Styles */
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 0.375rem; /* 6px */
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--background-color, #fff);
+  }
+  
+  /* Focus-visible with simulated ring offset */
+  .custom-button:focus-visible {
+    box-shadow: 
+      0 0 0 2px var(--focus-ring-offset-color, #fff), /* Simulates the offset */
+      0 0 0 4px var(--focus-ring-color, #0077ff);    /* Actual ring color */
+  }
+  
+  .custom-button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* Variants */
+  .button-variant-default {
+    background-color: var(--primary-color, #0077ff);
+    color: var(--primary-foreground, #fff);
+  }
+  
+  .button-variant-default:hover {
+    background-color: var(--primary-hover, #005bb5);
+  }
+  
+  .button-variant-destructive {
+    background-color: var(--destructive-color, #ff4d4f);
+    color: var(--destructive-foreground, #fff);
+  }
+  
+  .button-variant-destructive:hover {
+    background-color: var(--destructive-hover, #d9363e);
+  }
+  
+  .button-variant-outline {
+    border: 1px solid var(--input-border-color, #ccc);
+    background-color: var(--background-color, #fff);
+  }
+  
+  .button-variant-outline:hover {
+    background-color: var(--accent-color, #f5f5f5);
+    color: var(--accent-foreground, #333);
+  }
+  
+  .button-variant-secondary {
+    background-color: var(--secondary-color, #6c757d);
+    color: var(--secondary-foreground, #fff);
+  }
+  
+  .button-variant-secondary:hover {
+    background-color: var(--secondary-hover, #5a6268);
+  }
+  
+  .button-variant-ghost {
+    background-color: transparent;
+  }
+  
+  .button-variant-ghost:hover {
+    background-color: var(--accent-color, #f5f5f5);
+    color: var(--accent-foreground, #333);
+  }
+  
+  .button-variant-link {
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: var(--primary-color, #0077ff);
+  }
+  
+  .button-variant-link:hover {
+    color: var(--primary-hover, #005bb5);
+  }
+  
+  /* Sizes */
+  .button-size-default {
+    height: 2.5rem; /* 40px */
+    padding: 0.5rem 1rem; /* 8px 16px */
+  }
+  
+  .button-size-sm {
+    height: 2.25rem; /* 36px */
+    padding: 0.5rem 0.75rem; /* 8px 12px */
+    border-radius: 0.375rem; /* 6px */
+  }
+  
+  .button-size-lg {
+    height: 2.75rem; /* 44px */
+    padding: 0.5rem 2rem; /* 8px 32px */
+    border-radius: 0.375rem; /* 6px */
+  }
+  
+  .button-size-icon {
+    height: 2.5rem; /* 40px */
+    width: 2.5rem; /* 40px */
+  }
+  

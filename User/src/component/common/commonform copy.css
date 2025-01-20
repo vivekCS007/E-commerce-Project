@@ -1,0 +1,62 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.grid {
+    display: grid;
+    gap: 6px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.gap-3 {
+    gap: 12px;
+}
+
+.gap-small {
+    gap: 6px;
+}
+
+.mb-1 {
+    margin-bottom: 4px;
+}
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
