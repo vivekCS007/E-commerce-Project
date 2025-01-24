@@ -5,6 +5,7 @@ const MONGOURI = process.env.MONGOURI;
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRouter from './routes/auth/auth-routes';
+import adminProductsRouter from './routes/admin/products-routes';
 connect(MONGOURI).then(()=>{
     console.log("connected to database");
 }).catch((err)=>{
@@ -24,6 +25,7 @@ app.use(
     })
 );
 app.use('/api/auth',authRouter);
+app.use("/api/admin/products",adminProductsRouter);
 app.use(json());
 app.use(cookieParser());
 app.listen(PORT,()=>{

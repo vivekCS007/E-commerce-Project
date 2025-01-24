@@ -1,62 +1,69 @@
-form {
+/* Form container styles */
+.common-form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.grid {
+  }
+  
+  /* Input, Select, Textarea container styles */
+  .common-form .input-group {
     display: grid;
-    gap: 6px;
-}
-
-.w-full {
+    gap: 8px; /* Space between label and input */
     width: 100%;
-}
-
-.gap-3 {
-    gap: 12px;
-}
-
-.gap-small {
-    gap: 6px;
-}
-
-.mb-1 {
-    margin-bottom: 4px;
-}
-
-.mt-2 {
-    margin-top: 8px;
-}
-
-label {
+  }
+  
+  /* Label styles */
+  .common-form label {
     font-size: 14px;
-    font-weight: bold;
-    color: #333;
-}
-
-button {
+    font-weight: 500;
+    color: #333; /* Dark gray color for the label */
+    margin-bottom: 4px;
+  }
+  
+  /* Input styles */
+  .common-form input,
+  .common-form select,
+  .common-form textarea {
     width: 100%;
-    padding: 10px 16px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .common-form input:focus,
+  .common-form select:focus,
+  .common-form textarea:focus {
+    border-color: #0070f3; /* Blue border on focus */
+  }
+  
+  /* Button styles */
+  .common-form button {
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
+    background-color: #0070f3;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    text-align: center;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+    transition: background-color 0.3s;
+  }
+  
+  .common-form button:disabled {
+    background-color: #cccccc; /* Gray background for disabled state */
+    cursor: not-allowed;
+  }
+  
+  .common-form button:hover:not(:disabled) {
+    background-color: #005bb5; /* Darker blue on hover */
+  }
+  
+  /* General spacing for form elements */
+  .mt-2 {
+    margin-top: 16px;
+  }
+  
